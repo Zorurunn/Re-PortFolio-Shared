@@ -1,10 +1,8 @@
 export const ImageShadow = (props) => {
     return (
-        <>
-            <div className='relative border-5'>
-                <img className={'absolute  z-10 ' + props.width + " " + props.height + " " + props.alignPic} src={props.src} alt=""></img>
-                <div className={'bg-gray-300 absolute  z-0 ' + props.width + " " + props.height + " " + props.alignBox}></div>
-            </div >
-        </>
+        <div className={'relative w-full h-full'}>
+            <img className={'absolute object-cover z-10 w-[calc(100%-40px)] md:w-full h-full left-[20px]' + " " + props.alignPic} src={props.src} alt="" />
+            <div className={'w-full h-full bg-gray-300 relative z-0 top-[20px] md:top-[40px]'}></div>
+        </div >
     )
 }

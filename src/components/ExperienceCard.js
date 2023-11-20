@@ -6,7 +6,7 @@ export const ExperienceCard = (props) => {
                     <div>
                         <img src='/logo-upwork.png' alt=""></img>
                     </div>
-                    <div>
+                    <div className="flex flex-col gap-[15px]">
                         <div className="text-[20px]">
                             {props.title}
                         </div>
