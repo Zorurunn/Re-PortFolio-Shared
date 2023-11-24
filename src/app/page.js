@@ -1,7 +1,6 @@
 "use client"
 import { NavBar } from "@/components/Navbar"
 import { Header } from "@/components/Header"
-import { ProPic } from "@/components/ProPic"
 import { AboutMe } from "@/components/AboutMe"
 import { Skills } from "@/components/Skills"
 import { Experience } from "@/components/Experience"
@@ -9,7 +8,6 @@ import { Work } from "@/components/Work"
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
 import { Container } from "@/components/Container"
-import { Test } from "@/components/Test"
 import { Hamburger } from "@/components/Hamburger"
 import { useState } from "react"
 
@@ -49,7 +47,6 @@ export default function Home() {
         </Container>
 
         <Footer dark={darkMode} bg={'bg-gray-50 dark:bg-[#111827]'} maxWidth={'max-w-[1100px]'}></Footer>
-
       </div>
     </div>
   )
