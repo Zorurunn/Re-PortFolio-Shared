@@ -11,7 +11,6 @@ import { Footer } from "@/components/Footer"
 import { Container } from "@/components/Container"
 import { Test } from "@/components/Test"
 import { Hamburger } from "@/components/Hamburger"
-import { Nav } from "@/components/Nav"
 import { useState } from "react"
 
 export default function Home() {

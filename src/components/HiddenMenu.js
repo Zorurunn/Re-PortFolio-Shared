@@ -13,9 +13,9 @@ export const HiddenMenu = (props) => {
         { title: "Contact" },
     ]
     return (<>
-        <div className="fixed top-0 left-0 w-full h-screen bg-white dark:bg-black dark:text-white z-20 md:hidden">
+        <div className="fixed top-0 left-0 w-full h-screen bg-white dark:bg-black dark:text-white z-30 md:hidden">
 
-            <LittleContainer align={'h-16 mt-[40px]'}>
+            <LittleContainer align={'h-16'}>
                 <h1 id="logo" className='flex justify-center items-center' >SS/</h1>
                 <div id="details" className='flex justify-center items-center gap-4'>
                     <div className="w-[40px] h-[40px] flex flex-col justify-center items-center">
