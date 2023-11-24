@@ -1,16 +1,16 @@
-import { ActiveDot } from "@/assets/svgs/ActiveDot"
+import { ActiveDotI } from "@/assets/OtherIcons/ActiveDotI"
 import { ImageShadow } from "./ImageShadow"
 import { Title } from "./Title"
 import { JsIcon } from "@/assets/svgs/JsIcon"
 
-export const AboutMe = () => {
+export const AboutMe = (props) => {
     return (
         <div>
             <Title title={'About me'}></Title>
             <div className={'grid grid-cols-[1fr] gap-[80px] md:grid-cols-[1fr_1fr]  '}>
                 <div className="flex justify-center md:justify-start">
                     <div className='w-[400px] h-[480px]'>
-                        <ImageShadow src={'/AboutMePic.png'} alignPic={'md:left-[40px]'} />
+                        <ImageShadow border={'dark:border-[#111827]'} src={'/AboutPic.png'} alignPic={'md:left-[40px]'} />
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@ export const AboutMe = () => {
                         <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] gap-[10px]">
                             <div className="flex justify-start gap-[10px] items-center">
                                 <div className='flex justify-center items-center'>
-                                    <ActiveDot color={'black'} />
+                                    <ActiveDotI color={props.dark ? '#D1D5DB' : 'black'} width={'8'} height={'8'} />
                                 </div>
                                 <div>
                                     B.E. in Computer Engineering
@@ -55,7 +55,7 @@ export const AboutMe = () => {
                             </div>
                             <div className="flex justify-start gap-[10px] items-center">
                                 <div className='flex justify-center items-center'>
-                                    <ActiveDot color={'black'} />
+                                    <ActiveDotI color={props.dark ? '#D1D5DB' : 'black'} width={'8'} height={'8'} />
                                 </div>
                                 <div>
                                     Avid learner
@@ -63,7 +63,7 @@ export const AboutMe = () => {
                             </div>
                             <div className="flex justify-start gap-[10px] items-center">
                                 <div className='flex justify-center items-center'>
-                                    <ActiveDot color={'black'} />
+                                    <ActiveDotI color={props.dark ? '#D1D5DB' : 'black'} width={'8'} height={'8'} />
                                 </div>
                                 <div>
                                     Full time freelancer
@@ -71,7 +71,7 @@ export const AboutMe = () => {
                             </div>
                             <div className="flex justify-start gap-[10px] items-center">
                                 <div className='flex justify-center items-center'>
-                                    <ActiveDot color={'black'} />
+                                    <ActiveDotI color={props.dark ? '#D1D5DB' : 'black'} width={'8'} height={'8'} />
                                 </div>
                                 <div>
                                     Aspiring indie hacker

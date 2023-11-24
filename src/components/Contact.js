@@ -1,9 +1,12 @@
 import { Title } from "./Title"
-import { Icon1 } from '@/assets/svgs/Icon1'
-import { Icon2 } from '@/assets/svgs/Icon2'
-import { Icon3 } from '@/assets/svgs/Icon3'
+import { GitSVG } from '@/assets/svgs/GitSVG'
+import { TwitterSVG } from '@/assets/svgs/TwitterSVG'
+import { FigmaSVG } from '@/assets/svgs/FigmaSVG'
+import { MailI } from "@/assets/OtherIcons/MailI"
+import { CopyI } from "@/assets/OtherIcons/CopyI"
+import { PhoneI } from "@/assets/OtherIcons/PhoneI"
 
-export const Contact = () => {
+export const Contact = (props) => {
     return (
         <>
             <div className={'flex flex-col gap-[48px] justify-center items-center'}>
@@ -11,23 +14,22 @@ export const Contact = () => {
 
                 <div className="flex flex-col justify-center items-center gap-[18px]">
                     <div className="flex gap-[10px]">
-                        <img src="/mail-icon.png"></img>
+                        <MailI color={props.dark ? '#D1D5DB' : '#4B5563'}></MailI>
                         <div className="text-[28px]">reachsagarshah@gmail.com</div>
-                        <img src="/copy-icon.png"></img>
+                        <CopyI color={props.dark ? '#D1D5DB' : '#4B5563'}></CopyI>
                     </div>
                     <div className="flex gap-[10px]">
-                        <img src="/mail-icon.png"></img>
+                        <PhoneI color={props.dark ? '#D1D5DB' : '#4B5563'}></PhoneI>
                         <div className="text-[28px]">+91 8980500565</div>
-                        <img src="/copy-icon.png"></img>
-
+                        <CopyI color={props.dark ? '#D1D5DB' : '#4B5563'}></CopyI>
                     </div>
                 </div>
                 <div>
                     <div>You may also find me on these platforms!</div>
                     <div className='flex gap-[0px] justify-center items-center'>
-                        <div><Icon1></Icon1></div>
-                        <div><Icon2></Icon2></div>
-                        <div><Icon3></Icon3></div>
+                        <div><GitSVG color={props.dark ? '#D1D5DB' : '#4B5563'}></GitSVG></div>
+                        <div><TwitterSVG color={props.dark ? '#D1D5DB' : '#4B5563'}></TwitterSVG></div>
+                        <div><FigmaSVG color={props.dark ? '#D1D5DB' : '#4B5563'}></FigmaSVG></div>
                     </div>
                 </div>
 
