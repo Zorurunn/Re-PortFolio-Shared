@@ -9,7 +9,7 @@ export const AboutMe = (props) => {
             <Title title={'About me'}></Title>
             <div className={'grid grid-cols-[1fr] gap-[80px] md:grid-cols-[1fr_1fr]  '}>
                 <div className="flex justify-center md:justify-start">
-                    <div className='w-[400px] h-[480px]'>
+                    <div className='w-[280px] h-[320px] md:w-[400px] md:h-[480px]'>
                         <ImageShadow border={'dark:border-[#111827]'} src={'/AboutPic.png'} alignPic={'md:left-[40px]'} />
                     </div>
                 </div>

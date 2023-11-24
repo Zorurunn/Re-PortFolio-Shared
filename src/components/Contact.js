@@ -12,16 +12,16 @@ export const Contact = (props) => {
             <div className={'flex flex-col gap-[48px] justify-center items-center'}>
                 <Title title={'Get in touch'} description={`What’s next? Feel free to reach out to me if you\'re looking for${<br></br>} a developer, have a query, or simply want to connect.`}></Title>
 
-                <div className="flex flex-col justify-center items-center gap-[18px]">
+                <div className="flex flex-col justify-center items-center gap-[18px] ">
                     <div className="flex gap-[10px]">
-                        <MailI color={props.dark ? '#D1D5DB' : '#4B5563'}></MailI>
-                        <div className="text-[28px]">reachsagarshah@gmail.com</div>
-                        <CopyI color={props.dark ? '#D1D5DB' : '#4B5563'}></CopyI>
+                        <MailI w={'16px'} h={'16px'} color={props.dark ? '#D1D5DB' : '#4B5563'}></MailI>
+                        <div className="text-[16px] md:text-[28px]">reachsagarshah@gmail.com</div>
+                        <PhoneI color={props.dark ? '#D1D5DB' : '#4B5563'}></PhoneI>
                     </div>
                     <div className="flex gap-[10px]">
-                        <PhoneI color={props.dark ? '#D1D5DB' : '#4B5563'}></PhoneI>
-                        <div className="text-[28px]">+91 8980500565</div>
                         <CopyI color={props.dark ? '#D1D5DB' : '#4B5563'}></CopyI>
+                        <div className="text-[16px] md:text-[28px]">+91 8980500565</div>
+                        <PhoneI color={props.dark ? '#D1D5DB' : '#4B5563'}></PhoneI>
                     </div>
                 </div>
                 <div>

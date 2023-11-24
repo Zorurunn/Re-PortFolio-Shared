@@ -12,7 +12,7 @@ export const Footer = (props) => {
                         <div className='flex justify-center items-center'>
                             <CopyRightI color={props.dark ? '#D1D5DB' : '#4B5563'} />
                         </div>
-                        <div>2023 | Designed and coded with ❤️️ by Sagar Shah</div>
+                        <div className="text-[12px] md:text-[24px]">2023 | Designed and coded with ❤️️ by Sagar Shah</div>
                     </div>
                 </div>
             </div >
