@@ -20,7 +20,11 @@ export const Hamburger = (props) => {
             <nav className='flex justify-between h-16 fixed z-30 bg-white dark:bg-black top-0 left-0 w-full md:hidden w-screen m-auto max-w-[1100px]'>
                 <div className={"w-screen m-auto max-w-[1100px] px-[16px] h-fit"}>
                     <div className={'flex justify-between '}>
-                        <h1 id="logo" className='flex justify-center items-center' >SS/</h1>
+                        <button onClick={() => {
+                            const scroll = document.querySelector(`#Header`);
+                            const parent = scroll.parentNode;
+                            parent.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+                        }} id="logo" className='flex justify-center items-center text-[20px]' >&lt;SS/&gt;</button>
                         <div id="details" className='flex justify-center items-center gap-4'>
                             <button
                                 onClick={() => {

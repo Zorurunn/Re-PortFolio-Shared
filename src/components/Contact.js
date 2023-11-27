@@ -8,7 +8,7 @@ import { PhoneI } from "@/assets/OtherIcons/PhoneI"
 
 export const Contact = (props) => {
     return (
-        <>
+        <div id="Contact">
             <div className={'flex flex-col gap-[48px] justify-center items-center'}>
                 <Title title={'Get in touch'} description={`What’s next? Feel free to reach out to me if you\'re looking for${<br></br>} a developer, have a query, or simply want to connect.`}></Title>
 
@@ -34,6 +34,6 @@ export const Contact = (props) => {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }

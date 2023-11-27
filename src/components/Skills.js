@@ -88,7 +88,7 @@ export const Skills = (props) => {
         },
     ]
     return (
-        <>
+        <div id="Testimonials">
             <Title title={'Skills'} description={"The skills, tools and technologies I am really good at:"}></Title>
             {/* grid gap-[20px] grid-cols-8  */}
 
@@ -104,7 +104,7 @@ export const Skills = (props) => {
                 })}
             </div>
 
-        </>
+        </div>
     )
 }
 

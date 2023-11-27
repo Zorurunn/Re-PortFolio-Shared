@@ -63,7 +63,7 @@ export const Work = (props) => {
         },
     ]
     return (
-        <>
+        <div id="Work">
             <Title title={'Work'} description={'Some of the noteworthy projects I have built:'}></Title>
 
             <div className="flex flex-col gap-[48px]">
@@ -85,7 +85,7 @@ export const Work = (props) => {
 
 
             </div>
-        </>
+        </div>
     )
 }
 

@@ -5,7 +5,7 @@ import { JsIcon } from "@/assets/svgs/JsIcon"
 
 export const AboutMe = (props) => {
     return (
-        <div>
+        <div id="About">
             <Title title={'About me'}></Title>
             <div className={'grid grid-cols-[1fr] gap-[80px] md:grid-cols-[1fr_1fr]  '}>
                 <div className="flex justify-center md:justify-start">

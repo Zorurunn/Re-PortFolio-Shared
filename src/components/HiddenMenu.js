@@ -5,6 +5,8 @@ import { MoonI } from "@/assets/OtherIcons/MoonI";
 import { SunI } from "@/assets/OtherIcons/SunI";
 import { DownloadCv } from "./DownloadButton";
 import { LittleContainer } from "./LittleContainer";
+import allClass from '../app/allClass.module.css'
+
 export const HiddenMenu = (props) => {
     const data = [
         { title: 'About' },
@@ -16,7 +18,12 @@ export const HiddenMenu = (props) => {
         <div className="fixed top-0 left-0 w-full h-screen bg-white dark:bg-black dark:text-white z-30 md:hidden">
 
             <LittleContainer align={'h-16'}>
-                <h1 id="logo" className='flex justify-center items-center' >SS/</h1>
+                <button onClick={() => {
+                    props.toggle((prev) => !prev);
+                    const scroll = document.querySelector(`#Header`);
+                    const parent = scroll.parentNode;
+                    parent.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+                }} id="logo" className='flex justify-center items-center text-[20px]' >&lt;SS/&gt;</button>
                 <div id="details" className='flex justify-center items-center gap-4'>
                     <div className="w-[40px] h-[40px] flex flex-col justify-center items-center">
                         <button
@@ -38,6 +45,9 @@ export const HiddenMenu = (props) => {
                     {data.map((item) => {
                         return <button onClick={() => {
                             props.toggle((prev) => !prev);
+                            const scroll = document.querySelector(`#${item.title}`);
+                            const parent = scroll.parentNode;
+                            parent.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
                         }}>{item.title}</button>
                     })}
                 </div>
@@ -60,7 +70,7 @@ export const HiddenMenu = (props) => {
             </LittleContainer>
 
             <LittleContainer>
-                <DownloadCv></DownloadCv>
+                <DownloadCv width={'w-full'}></DownloadCv>
             </LittleContainer>
         </div>
 
