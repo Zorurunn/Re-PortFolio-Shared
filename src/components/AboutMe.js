@@ -94,7 +94,7 @@ export const AboutMe = (props) => {
                     height={"8"}
                   />
                 </div>
-                <div>Aspiring indie hacker</div>
+                <div>Aspiring a aindie hacker</div>
               </div>
             </div>
             <p>
