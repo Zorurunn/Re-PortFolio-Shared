@@ -54,7 +54,7 @@ export const Hamburger = (props) => {
         </div>
       </nav>
 
-      {!isDrawerOpen && (
+      {isDrawerOpen && (
         <HiddenMenu
           dark={props.dark}
           toggle={setIsDrawerOpen}
