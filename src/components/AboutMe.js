@@ -1,7 +1,6 @@
 import { ActiveDotI } from "@/assets/OtherIcons/ActiveDotI";
 import { ImageShadow } from "./ImageShadow";
 import { Title } from "./Title";
-import { JsIcon } from "@/assets/svgs/JsIcon";
 
 export const AboutMe = (props) => {
   return (
@@ -14,7 +13,7 @@ export const AboutMe = (props) => {
           <div className="w-[280px] h-[320px] md:w-[400px] md:h-[480px]">
             <ImageShadow
               border={"dark:border-[#111827]"}
-              src={"/stand.jpg"}
+              src={"/AboutMe.png"}
               alignPic={"md:left-[40px]"}
             />
           </div>
@@ -24,82 +23,24 @@ export const AboutMe = (props) => {
           <div className="text-[30px]">Curious about me? Here you have it:</div>
           <div className="flex flex-col gap-[16px]">
             <p>
-              I&quot;m a passionate, self-proclaimed designerwho specializes in
-              full stack development (React.js & Node.js). I am very
-              enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.
+              I transitioned into web development because I needed a career
+              change and saw the growing popularity of the field. This practical
+              decision led me to master both front-end and back-end
+              technologies, including HTML, CSS, JavaScript, Node.js, and
+              various databases. I am continuously growing and evolving, taking
+              on new challenges and learning the latest technologies. Now, I
+              build cutting-edge web applications using modern tools like
+              Next.js, TypeScript, Tailwind CSS, MongoDB, and more.
             </p>
 
             <p>
-              I began my journey as a web developer in 2015, and since then,
-              I&quot;ve continued to grow and evolve as a developer, taking on
-              new challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I&quot;m building cutting-edge web
-              applications using modern technologies such as Next.js,
-              TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+              I am very much a progressive thinker and enjoy working on
+              innovative products.
             </p>
 
             <p>
-              I am very much a progressive thinker and enjoy working on products
-              end to end, from ideation all the way to development.
-            </p>
-
-            <p>
-              When I&quot;m not in full-on developer mode, you can find me
-              hovering around on twitter or on indie hacker, witnessing the
-              journey of early startups or enjoying some free time. You can
-              follow me on Twitter where I share tech-related bites and build in
-              public, or you can follow me on GitHub
-            </p>
-
-            <p>Finally, some quick bits about me.</p>
-            <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] gap-[10px]">
-              <div className="flex justify-start gap-[10px] items-center">
-                <div className="flex justify-center items-center">
-                  <ActiveDotI
-                    color={props.dark ? "#D1D5DB" : "black"}
-                    width={"8"}
-                    height={"8"}
-                  />
-                </div>
-                <div>B.E. in Computer Engineering</div>
-              </div>
-              <div className="flex justify-start gap-[10px] items-center">
-                <div className="flex justify-center items-center">
-                  <ActiveDotI
-                    color={props.dark ? "#D1D5DB" : "black"}
-                    width={"8"}
-                    height={"8"}
-                  />
-                </div>
-                <div>Avid learner</div>
-              </div>
-              <div className="flex justify-start gap-[10px] items-center">
-                <div className="flex justify-center items-center">
-                  <ActiveDotI
-                    color={props.dark ? "#D1D5DB" : "black"}
-                    width={"8"}
-                    height={"8"}
-                  />
-                </div>
-                <div>Full time freelancer</div>
-              </div>
-              <div className="flex justify-start gap-[10px] items-center">
-                <div className="flex justify-center items-center">
-                  <ActiveDotI
-                    color={props.dark ? "#D1D5DB" : "black"}
-                    width={"8"}
-                    height={"8"}
-                  />
-                </div>
-                <div>Aspiring a aindie hacker</div>
-              </div>
-            </div>
-            <p>
-              One last thing, I&quot;m available for freelance work, so feel
-              free to reach out and say hello! I promise I don&quot;t bite 😉
+              One last thing, I&#39;m available for work, so feel free to reach
+              out and say hello! I promise I don&#39;t bite 😉
             </p>
           </div>
         </div>

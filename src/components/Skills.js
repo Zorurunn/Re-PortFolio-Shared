@@ -4,7 +4,6 @@ import { Title } from "./Title";
 import { Icons } from "./Icons";
 import { CypressI } from "../assets/SkillsIcons/CypressI";
 import { ExpressI } from "@/assets/SkillsIcons/ExpressI";
-import { FigmaI } from "@/assets/SkillsIcons/FigmaI";
 import { GitI } from "@/assets/SkillsIcons/GitI";
 import { JsI } from "@/assets/SkillsIcons/JsI";
 import { MongoI } from "@/assets/SkillsIcons/MongoI";
