@@ -14,9 +14,9 @@ export const Header = (props) => {
       <div className="grid gap-[80px] grid-cols-[1fr] md:grid-cols-[2fr_1fr]">
         <div className="flex flex-col gap-[48px] px-[20px]  justify-center order-2 md:order-1">
           <div>
-            <h1 className="text-4xl mb-[20px]"> Hi, I’m Zolzaya 👋</h1>
+            <h1 className="text-4xl mb-[20px]"> Hi, I&#39;m Zolzaya 👋</h1>
             <p>
-              I'm a passionate Full Stack Developer and innovator based in
+              I&#39;m a passionate Full Stack Developer and innovator based in
               Tokyo. With a deep love for technology.
             </p>
           </div>
