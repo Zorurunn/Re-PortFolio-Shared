@@ -14,20 +14,20 @@ export const Header = (props) => {
           <div>
             <h1 className="text-4xl mb-[20px]"> Hi, I’m Sagar 👋</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing ううcscand
-              typesetting industry. Lorem Ipsum has been the industry&quot;s
-              standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap
-              into electronic typesetting, remaining essentially unchanged. It
-              was popularised in the 1960s with the release of Letraset sheets
+              Lorem Ipsum is simply dummy text of the printing ded typesetting
+              industry. Lorem Ipsum has been the industry&quot;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop p
             </p>
           </div>
           <div className="flex flex-col gap-[10px]">
             <div className="flex flex-row gap-[10px]">
               <LocationI color={props.dark ? "#D1D5DB" : "#4B5563"} />
-              <p>Ahmedabad, India</p>
+              <p>Tokyo, Japan</p>
             </div>
             <div className="flex flex-row gap-[10px]">
               <div className="flex justify-center items-center w-[24px] h-[24px]">
@@ -56,7 +56,7 @@ export const Header = (props) => {
           <div className="w-[280px] h-[320px]">
             <ImageShadow
               border={"dark:border-black"}
-              src={"/ProPicNo.png"}
+              src={"/propic.jpg"}
               alignPic={"md:left-[-40px]"}
             />
           </div>

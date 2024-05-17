@@ -14,7 +14,7 @@ export const AboutMe = (props) => {
           <div className="w-[280px] h-[320px] md:w-[400px] md:h-[480px]">
             <ImageShadow
               border={"dark:border-[#111827]"}
-              src={"/AboutPic.png"}
+              src={"/stand.jpg"}
               alignPic={"md:left-[40px]"}
             />
           </div>
