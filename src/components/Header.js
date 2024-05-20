@@ -46,9 +46,6 @@ export const Header = (props) => {
             <Link href="https://github.com/Zorurunn" target="_blank">
               <GitIcon color={props.dark ? "#D1D5DB" : "#4B5563"} />
             </Link>
-
-            <div></div>
-            <div></div>
           </div>
         </div>
 

@@ -18,6 +18,8 @@ import { StoryBookI } from "@/assets/SkillsIcons/StoryBokkI";
 import { TailwindI } from "@/assets/SkillsIcons/TailwindI";
 import { TypeScriptI } from "@/assets/SkillsIcons/TypescriptI";
 import { PostgrI } from "@/assets/SkillsIcons/PostgrI";
+import { Planguage } from "./Planguage";
+import { MySkills } from "./MySkills";
 
 export const Skills = (props) => {
   const icons = [
@@ -87,14 +89,15 @@ export const Skills = (props) => {
     },
   ];
   return (
-    <div id="Testimonials">
+    <div id="Skill">
       <Title
         title={"Skills"}
         description={"The skills, tools and technologies I am really good at:"}
       ></Title>
       {/* grid gap-[20px] grid-cols-8  */}
-
-      <div className="w-full grid grid-cols-3 gap-[60px] sm:grid-cols-5 sm:gap-[40px] md:grid-cols-8 md:gap-[50px] ">
+      {/* <Planguage /> */}
+      <MySkills dark={props.dark} />
+      {/* <div className="w-full grid grid-cols-3 gap-[60px] sm:grid-cols-5 sm:gap-[40px] md:grid-cols-8 md:gap-[50px] ">
         {icons.map((item, index) => {
           return (
             <div
@@ -106,7 +109,7 @@ export const Skills = (props) => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

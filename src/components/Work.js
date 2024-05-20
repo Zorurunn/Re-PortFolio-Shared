@@ -1,6 +1,6 @@
-import { ActiveDot } from "@/assets/OtherIcons/ActiveDotI";
-import { ImageShadow } from "./ImageShadow";
+"use client";
 import { Title } from "./Title";
+
 import { Buttons } from "./Buttons";
 import { WorkDetails } from "./WorkDetails";
 
@@ -25,43 +25,43 @@ export const Work = (props) => {
       ],
       image: <img src="./FoodDelivery.png"></img>,
       order: "order-1",
+      href: "https://food-delivery-zorurunn.vercel.app/",
     },
     {
       title: "Blog web site",
       description:
         "This is a blog website using the Dev.to community and API. Anyone can visit and read the newest blogs. It features trending and latest categories, as well as a search function. Please note that this website does not have a responsive design.",
       buttons: [
-        <Buttons key={1} title={"Github"}></Buttons>,
-        <Buttons key={2} title={"React"}></Buttons>,
+        <Buttons key={1} title={"JavaScript"}></Buttons>,
+        <Buttons key={2} title={"ReactJS"}></Buttons>,
         <Buttons key={3} title={"NextJs"}></Buttons>,
-        <Buttons key={4} title={"TypeScript"}></Buttons>,
-        <Buttons key={5} title={"C Sharp"}></Buttons>,
-        <Buttons key={6} title={"MongoDB"}></Buttons>,
-        <Buttons key={7} title={"Inkliw"}></Buttons>,
-        <Buttons key={8} title={"InstaJs"}></Buttons>,
-        <Buttons key={9} title={"MongoDB"}></Buttons>,
+        <Buttons key={4} title={"Vercel"}></Buttons>,
+        <Buttons key={5} title={"ExpressJS"}></Buttons>,
+        <Buttons key={6} title={"NodeJs"}></Buttons>,
+        <Buttons key={7} title={"Tailwind"}></Buttons>,
       ],
       image: <img src="./BlogWork.png"></img>,
       order: "order-0",
+      href: "https://blog-dev-to.vercel.app/blog",
     },
-    {
-      title: "Fiskil",
-      description:
-        "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-      buttons: [
-        <Buttons key={21} title={"Github"}></Buttons>,
-        <Buttons key={22} title={"React"}></Buttons>,
-        <Buttons key={23} title={"NextJs"}></Buttons>,
-        <Buttons key={24} title={"TypeScript"}></Buttons>,
-        <Buttons key={25} title={"C Sharp"}></Buttons>,
-        <Buttons key={26} title={"MongoDB"}></Buttons>,
-        <Buttons key={27} title={"Inkliw"}></Buttons>,
-        <Buttons key={28} title={"InstaJs"}></Buttons>,
-        <Buttons key={29} title={"MongoDB"}></Buttons>,
-      ],
-      image: <img src="./Work.png"></img>,
-      order: "order-0",
-    },
+    // {
+    //   title: "Fiskil",
+    //   description:
+    //     "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    //   buttons: [
+    //     <Buttons key={21} title={"Github"}></Buttons>,
+    //     <Buttons key={22} title={"React"}></Buttons>,
+    //     <Buttons key={23} title={"NextJs"}></Buttons>,
+    //     <Buttons key={24} title={"TypeScript"}></Buttons>,
+    //     <Buttons key={25} title={"C Sharp"}></Buttons>,
+    //     <Buttons key={26} title={"MongoDB"}></Buttons>,
+    //     <Buttons key={27} title={"Inkliw"}></Buttons>,
+    //     <Buttons key={28} title={"InstaJs"}></Buttons>,
+    //     <Buttons key={29} title={"MongoDB"}></Buttons>,
+    //   ],
+    //   image: <img src="./Work.png"></img>,
+    //   order: "order-0",
+    // },
   ];
   return (
     <div id="Work">
@@ -81,6 +81,7 @@ export const Work = (props) => {
               image={item.image}
               order={item.order}
               key={index}
+              href={item.href}
             />
           );
         })}
@@ -88,32 +89,3 @@ export const Work = (props) => {
     </div>
   );
 };
-
-{
-  /* <div className={'grid grid-cols-[1fr_1fr]  gap-[48px] rounded-[20px] shadow-md'}>
-
-<div className="p-[48px] flex flex-col gap-[24px]">
-    <div>Fiskil</div>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-    </p>
-    <div className="flex flex-wrap gap-[5px]">
-        <Buttons title={'Github'}></Buttons>
-        <Buttons title={'React'}></Buttons>
-        <Buttons title={'NextJs'}></Buttons>
-        <Buttons title={'TypeScript'}></Buttons>
-        <Buttons title={'C Sharp'}></Buttons>
-        <Buttons title={'MongoDB'}></Buttons>
-        <Buttons title={'Inkliw'}></Buttons>
-        <Buttons title={'Facebook'}></Buttons>
-    </div>
-    <div>
-        <img src="/LinkIcon.png"></img>
-    </div>
-</div>
-
-<div className="p-[48px]">
-    <img src='./Work.png'></img>
-</div>
-</div> */
-}

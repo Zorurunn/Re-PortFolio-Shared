@@ -32,15 +32,15 @@ export default function Home() {
         </Container>
 
         <Container bg={"bg-gray"}>
-          {/* <Skills dark={darkMode} /> */}
-          <MySkills />
+          <Skills dark={darkMode} />
+          {/* <MySkills dark={darkMode} /> */}
         </Container>
+
+        {/* <Container bg={"bg-gray-50 dark:bg-[#111827]"}>
+          <Experience dark={darkMode} />
+        </Container> */}
 
         <Container bg={"bg-gray-50 dark:bg-[#111827]"}>
-          <Experience dark={darkMode} />
-        </Container>
-
-        <Container bg={"bg-gray"}>
           <Work dark={darkMode} />
         </Container>
 
@@ -48,11 +48,11 @@ export default function Home() {
           <Contact dark={darkMode} />
         </Container>
 
-        <Footer
+        {/* <Footer
           dark={darkMode}
           bg={"bg-gray-50 dark:bg-[#111827]"}
           maxWidth={"max-w-[1100px]"}
-        ></Footer>
+        ></Footer> */}
       </div>
     </div>
   );
