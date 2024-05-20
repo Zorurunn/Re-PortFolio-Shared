@@ -1,5 +1,5 @@
 import { ExpressIcon } from "../../public/ExpressIcon";
-import { CypressIcon } from "../../public/cypressIcon";
+import { CypressIconI } from "../../public/CypressIconI";
 import { Planguage } from "./Planguage";
 import { Title } from "./Title";
 export const MySkills = (props) => {
@@ -26,7 +26,7 @@ export const MySkills = (props) => {
         <Planguage
           text="Cypress"
           source={"/icon-cypress.svg"}
-          svg={<CypressIcon color={props.dark ? "white" : "black"} />}
+          svg={<CypressIconI color={props.dark ? "white" : "black"} />}
         />
         <Planguage text="Jest" source="/icon-jest.jpeg" />
         <Planguage text="Git" source="/icon-git.svg" />

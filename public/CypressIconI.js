@@ -1,4 +1,4 @@
-export const CypressIcon = (props) => {
+export const CypressIconI = (props) => {
   return (
     <svg
       width="65"
