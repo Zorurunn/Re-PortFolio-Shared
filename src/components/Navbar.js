@@ -120,7 +120,7 @@ export const NavBar = (props) => {
                 <MoonI />
               </button>
               {/* <button className='bg-black text-white rounded pr-2 pt-1 pl-2 pb-1 dark:bg-white dark:text-black'>Download CV</button> */}
-              <a download href="/Zolzaya+CV.pdf">
+              <a download href="/Zolzaya+CV+EN.pdf">
                 <DownloadCv />
               </a>
             </div>

@@ -129,7 +129,7 @@ export const HiddenMenu = (props) => {
         </LittleContainer>
 
         <LittleContainer>
-          <a download href="/Zolzaya+CV.pdf">
+          <a download href="/Zolzaya+CV+EN.pdf">
             <DownloadCv />
           </a>
         </LittleContainer>
