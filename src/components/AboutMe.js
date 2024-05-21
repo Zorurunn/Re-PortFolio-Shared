@@ -20,7 +20,7 @@ export const AboutMe = (props) => {
         </div>
 
         <div className="flex flex-col gap-[24px]">
-          <div className="text-[30px]">Curious about me? Here you have it:</div>
+          <div className="text-[24px]">Curious about me? Here you have it:</div>
           <div className="flex flex-col gap-[16px]">
             <p>
               I transitioned into web development because I needed a career
@@ -40,7 +40,7 @@ export const AboutMe = (props) => {
 
             <p>
               One last thing, I&#39;m available for work, so feel free to reach
-              out and say hello! I promise I don&#39;t bite 😉
+              out and say hello!
             </p>
           </div>
         </div>

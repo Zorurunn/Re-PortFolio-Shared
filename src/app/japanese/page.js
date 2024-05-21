@@ -1,16 +1,13 @@
 "use client";
-import { NavBar } from "@/components/Navbar";
-import { Header } from "@/components/Header";
-import { AboutMe } from "@/components/AboutMe";
-import { Skills } from "@/components/Skills";
-import { Experience } from "@/components/Experience";
-import { Work } from "@/components/Work";
-import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
 import { Container } from "@/components/Container";
-import { Hamburger } from "@/components/Hamburger";
 import { useState } from "react";
-import { MySkills } from "@/components/MySkills";
+import { Hamburger } from "./_component/_navbar/Hamburger";
+import { NavBar } from "./_component/_navbar/Navbar";
+import { Header } from "./_component/Header";
+import { AboutMe } from "./_component/AboutMe";
+import { Skills } from "./_component/_skill/Skills";
+import { Work } from "./_component/_work/Work";
+import { Contact } from "./_component/Contact";
 import { usePathname } from "next/navigation";
 
 export default function Home() {
@@ -21,7 +18,7 @@ export default function Home() {
       <div className="dark:bg-black">
         <Container bg={"bg-gray"} padding={"!pt-[0px] !pb-[0px]"}>
           <Hamburger set={setDarkMode} dark={darkMode} pathname={pathname} />
-          <NavBar set={setDarkMode} />
+          <NavBar set={setDarkMode} dark={darkMode} />
         </Container>
 
         <Container bg={"bg-gray"}>
@@ -34,12 +31,7 @@ export default function Home() {
 
         <Container bg={"bg-gray"}>
           <Skills dark={darkMode} />
-          {/* <MySkills dark={darkMode} /> */}
         </Container>
-
-        {/* <Container bg={"bg-gray-50 dark:bg-[#111827]"}>
-          <Experience dark={darkMode} />
-        </Container> */}
 
         <Container bg={"bg-gray-50 dark:bg-[#111827]"}>
           <Work dark={darkMode} />
@@ -48,12 +40,6 @@ export default function Home() {
         <Container bg={"bg-gray"}>
           <Contact dark={darkMode} />
         </Container>
-
-        {/* <Footer
-          dark={darkMode}
-          bg={"bg-gray-50 dark:bg-[#111827]"}
-          maxWidth={"max-w-[1100px]"}
-        ></Footer> */}
       </div>
     </div>
   );

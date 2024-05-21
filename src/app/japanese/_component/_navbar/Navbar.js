@@ -1,21 +1,18 @@
-import React, { useState } from "react";
 import { SunI } from "@/assets/OtherIcons/SunI";
-import { darkMode } from "../../tailwind.config";
 import { MoonI } from "@/assets/OtherIcons/MoonI";
-import { DownloadCv } from "./DownloadButton";
-import { LittleContainer } from "./LittleContainer";
-import allClass from "../app/allClass.module.css";
-import { MarginOfNav } from "./MarginOfNav";
-import { usePathname } from "next/navigation";
+import { DownloadCv } from "../DownloadButton";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 const data = [
-  { title: "About" },
-  { title: "Skill" },
-  { title: "Work" },
-  { title: "Contact" },
+  { title: "私について", id: "About" },
+  { title: "スキル", id: "Skill" },
+  { title: "プロジェクト", id: "Work" },
+  { title: "お問い合わせ", id: "Contact" },
 ];
 export const NavBar = (props) => {
-  const pathname = usePathname;
+  const pathname = usePathname();
+
   return (
     <>
       <nav className="hidden md:flex justify-between h-16 mt-[40px]">
@@ -64,14 +61,11 @@ export const NavBar = (props) => {
               id="details"
               className="flex justify-center items-center gap-4"
             >
-              {/* {data.map((item) => {
-                            return <div>{item.title}</div>
-                        })} */}
               {data.map((item, index) => {
                 return (
                   <button
                     onClick={() => {
-                      const scroll = document.querySelector(`#${item.title}`);
+                      const scroll = document.querySelector(`#${item.id}`);
                       const parent = scroll.parentNode;
                       parent.scrollIntoView({
                         behavior: "smooth",
@@ -79,7 +73,7 @@ export const NavBar = (props) => {
                         inline: "start",
                       });
                     }}
-                    className="text-[#4b5563] hover:text-stone-950"
+                    style={{ color: props.dark ? "#fff" : "#4b5563" }}
                     key={index}
                   >
                     {item.title}
@@ -119,9 +113,10 @@ export const NavBar = (props) => {
                 <SunI />
                 <MoonI />
               </button>
+
               {/* <button className='bg-black text-white rounded pr-2 pt-1 pl-2 pb-1 dark:bg-white dark:text-black'>Download CV</button> */}
-              <a download href="/Zolzaya+CV.pdf">
-                <DownloadCv />
+              <a download href="/Zolzaya+CV+JN.pdf">
+                <DownloadCv></DownloadCv>
               </a>
             </div>
           </div>

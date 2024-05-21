@@ -1,23 +1,13 @@
 import { HamburgerSvg } from "@/assets/svgs/HamburgerSvg";
 import { useState } from "react";
 import { HiddenMenu } from "./HiddenMenu";
+import { usePathname } from "next/navigation";
 export const Hamburger = (props) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { pathname } = props;
   return (
     <>
-      {/* <nav className='flex justify-between h-16 mt-[40px] md:hidden'>
-                <h1 id="logo" className='flex justify-center items-center' ></h1>
-                <div id="details" className='flex justify-center items-center gap-4'>
-                    <button
-
-                    >
-                        <div className="w-[40px] h-[40px] flex flex-col justify-center items-center">
-                        </div>
-                    </button>
-                </div>
-            </nav > */}
-      <nav className="flex justify-between h-16 fixed z-30 bg-white dark:bg-black top-0 left-0 w-full md:hidden w-screen m-auto max-w-[1100px]">
+      <nav className="flex justify-between h-16 fixed z-30 bg-white dark:bg-black top-0 left-0 w-full md:hidden  m-auto max-w-[1100px]">
         <div className={"w-screen m-auto max-w-[1100px] px-[16px] h-fit"}>
           <div className={"flex justify-between "}>
             <button
@@ -33,7 +23,6 @@ export const Hamburger = (props) => {
               id="logo"
               className="flex justify-center items-center text-[20px]"
             >
-              {/* &lt;SS/&gt; */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
@@ -59,7 +48,6 @@ export const Hamburger = (props) => {
                 }}
               >
                 <div className="w-[40px] h-[40px] flex flex-col justify-center items-center">
-                  {/* {clicked && <HamburgerSvg color={props.dark ? '#D1D5DB' : '#4B5563'} />} */}
                   <HamburgerSvg color={props.dark ? "#D1D5DB" : "#4B5563"} />
                 </div>
               </button>

@@ -1,4 +1,4 @@
-export const ExI = (props) => {
+export const ExI = () => {
   return (
     <div>
       <svg
@@ -11,14 +11,14 @@ export const ExI = (props) => {
       >
         <path
           d="M18 6L6 18"
-          stroke={props.color}
+          stroke={"#0000"}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M6 6L18 18"
-          stroke={props.color}
+          stroke={"#0000"}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
